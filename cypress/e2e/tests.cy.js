@@ -22,5 +22,21 @@ describe('Enviar mensaje', () => {
         cy.submitCorrectData()
     })
 
-    // Ejemplo adicional de validación de mensaje enviado mediante la API, si es requerido.
+
+
+    it('Confirmar que la información del hotel sea la esperada', () => {
+         cy.verifyHotelDescription()
 })
+    // Ejemplo adicional de validación de mensaje enviado mediante la API, si es requerido.
+
+
+
+it('Debe haber al menos una imagen visible', () => {
+    cy.verifyImageVisibility(); 
+});
+
+
+it('Debe mostrar la descripción esperada del hotel', () => {
+    cy.verifyHotelDescriptionText(); // Llama al comando para verificar el texto de la descripción
+});
+});
